@@ -17,6 +17,7 @@ import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
 import profile_img_3 from './profile_img_3.png'
 import logo_png from './Logo1.png' 
+import logo2 from './PTIMA_white.png'
 import kitchen from './Kitchen.png'
 import washing_machine from './WashingMachine.jpg'
 import tumble_dryer from './TumbleDryer.jpg'
@@ -41,6 +42,7 @@ export const assets = {
     left_arrow,
     right_arrow,
     logo_png,
+    logo2,
     kitchen,
     washing_machine,
     dishwasher,
@@ -48,6 +50,7 @@ export const assets = {
     fridge,
     oven,
     hood,
+
 }
 
 export const projectsData = [
