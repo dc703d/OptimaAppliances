@@ -1,5 +1,6 @@
 import React from 'react'
 import { toast } from 'react-toastify';
+import {motion} from "framer-motion"
 
 const Contact = () => {
 
@@ -11,7 +12,7 @@ const Contact = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+        formData.append("access_key", "8e596238-7625-48b7-9791-ebe16d77126d");
 
         const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -32,7 +33,11 @@ const Contact = () => {
 };
 
   return (
-    <div className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' id='Contact'>
+    <motion.div 
+        initial={{ scale: 0 }} 
+        transition={{duration: 1.5}}
+        animate={{ scale: 1 }}
+    className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' id='Contact'>
        <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Contact <span className='underline under underline-offset-4 decoration-1 font-light'>Us</span></h1>      
        <p className='text-center text-gray-500 mb-12 mx-auto max-w-80'>Ready to get your appliances back in action? Contact us today for fast, reliable service tailored to your needs!</p>
         <form onSubmit={onSubmit} className='max-w-2xl mx-auto text-gray-600 pt-8'>
@@ -51,13 +56,16 @@ const Contact = () => {
                 Message
                 <textarea className='w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none' name="Message" placeholder='Your Message' required></textarea>
             </div>
-            <button className='bg-blue-600 text-white py-2 px-12 mb-10 rounded'>{result ? result : "Send Message"}</button>
+            <motion.button 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className='bg-blue-600 text-white py-2 px-12 mb-10 rounded'>{result ? result : "Send Message"}</motion.button>
             
         </form>
     
     
     
-    </div>
+    </motion.div>
   )
 }
 

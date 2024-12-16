@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='container mx-auto flex flex-col md:flex-row justify-between items-center'>
         <div className='w-full md:w-1/3 mb-8 md:mb-0'>
             <img className='w-[100px]' src={assets.logo_png} alt="Logo" />
-            <p className='text-gray-400 mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit expedita, assumenda dolorum temporibus minus voluptates facere iste, alias omnis quos deleniti ex voluptatum maxime aut aspernatur atque magnam. Ab.</p>
+            <p className='text-gray-400 mt-4'>Optima Appliances offers expert repair and maintenance services for household and commercial appliances. With years of experience, we deliver reliable and affordable solutions to keep your appliances running smoothly.</p>
         </div>
         <div className='w-full md:w-1/5 mb-8 md:mb-0'>
             <h3 className='text-white text-lg font-bold mb-4'>Company</h3>
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-      <div className='text-center text-gray-500 py-4 mt-10 border border-gray-700'>
+      <div className='text-center text-gray-500 py-4 mt-10'>
         <p>Copyright 2024 © Optima Appliances (D&A Enterprises). All Rights Reserved</p>
       </div>
     </div>

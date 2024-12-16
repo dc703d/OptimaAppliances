@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {assets} from '../assets/assets'
+import {motion} from "framer-motion"
 
 const Navbar = () => {
     const [showMobileMenu,setshowMobileMenu] = useState(false)
@@ -23,7 +24,10 @@ const Navbar = () => {
             <a href='#Services' className='cursor-pointer hover:text-gray-400'>Services</a>
             <a href='#FAQ' className='cursor-pointer hover:text-gray-400'>FAQs</a>
         </ul>
-        <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Contact Us</button>
+        <motion.button 
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className='hidden md:block bg-white px-8 py-2 rounded-full' onClick={() => (window.location.href='tel:+447846719141')}>Call Us</motion.button>
         <img onClick={() => setshowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer'/>
       </div>
       {/*-----------mobile menu-----------*/}
