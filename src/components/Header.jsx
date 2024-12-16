@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 
 const Header = () => {
   return (
-    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' style={{backgroundImage: `url('/generated_background.jpg')`}} id='Header'>
+    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' style={{backgroundImage: `url('/background2.jpg')`}} id='Header'>
       <Navbar/>
-      <motion.div 
+      <motion.div
       initial={{opacity: 0, y: 100}}
       transition={{duration: 1.5}}
       whileInView={{opacity: 1, y: 0}}
