@@ -16,6 +16,7 @@ import hood from './Hood.jpg'
 import oven from './Oven.jpg'
 import fridge from './AmericanFridge.jpg'
 import dishwasher from './Dishwasher.jpg'
+import backgroundImage from './background2.jpg'
 
 
 export const assets = {
@@ -34,6 +35,7 @@ export const assets = {
     fridge,
     oven,
     hood,
+    backgroundImage
 
 }
 
