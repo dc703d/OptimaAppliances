@@ -1,8 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import {assets} from '../assets/assets'
 import {motion} from "framer-motion"
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
+
+
+  const navigate = useNavigate();
+
+  const navigateAndScroll = (id) => {
+    navigate('/OptimaAppliances');
+    setTimeout(() => {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
     const [showMobileMenu,setshowMobileMenu] = useState(false)
     useEffect(() => {
         if(showMobileMenu){
@@ -19,7 +35,7 @@ const Navbar = () => {
       <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
         <img src={assets.logo2} className='w-[200px]'/>
         <ul className='hidden md:flex gap-7 text-white'>
-            <a href='#Header' className='cursor-pointer hover:text-gray-400'>Home</a>
+            <p onClick= {()=> navigateAndScroll('Home')} className='cursor-pointer hover:text-gray-400'>Home</p>
             <a href='#About' className='cursor-pointer hover:text-gray-400'>About</a>
             <a href='#Services' className='cursor-pointer hover:text-gray-400'>Services</a>
             <a href='#FAQ' className='cursor-pointer hover:text-gray-400'>FAQs</a>

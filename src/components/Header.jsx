@@ -5,7 +5,7 @@ import { assets } from '../assets/assets'
 
 const Header = () => {
   return (
-    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' style={{backgroundImage: `url(${assets.backgroundImage})`}} id='Header'>
+    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' style={{backgroundImage: `url(${assets.backgroundImage})`}} id='Home'>
       <Navbar/>
       <motion.div
       initial={{opacity: 0, y: 100}}

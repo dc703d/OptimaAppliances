@@ -17,6 +17,22 @@ import oven from './Oven.jpg'
 import fridge from './AmericanFridge.jpg'
 import dishwasher from './Dishwasher.jpg'
 import backgroundImage from './background2.jpg'
+import arrow from './Arrow.png'
+import house from './home.png'
+import office from './office-building.png'
+import briefcase from './briefcase.png'
+import speedometer from './dashboard.png'
+import engineericon from './engineer.png'
+import handshake from './handshake.png'
+import buildings from './buildings.png'
+import house_hand from './house_hand.png'
+import pricetag from './price-tag.png'
+import toolbox from './toolbox.png'
+import wrench from './wrench.png'
+import briefcase_circle from './briefcase_circle.png'
+import business from './business.png'
+import homepage from './home-page.png'
+import home_red from './home_red.png'
 
 
 export const assets = {
@@ -35,7 +51,20 @@ export const assets = {
     fridge,
     oven,
     hood,
-    backgroundImage
+    backgroundImage,
+    arrow,
+    house,
+    office,
+    briefcase,
+    speedometer,
+    house_hand,
+    wrench,
+    pricetag,
+    engineericon,
+    handshake,
+    buildings,
+    toolbox,
+
 
 }
 
@@ -67,29 +96,71 @@ export const projectsData = [
     
   ];
 
+  
+
   export const testimonialsData = [
     {
-        name: "Donald Jackman",
-        title: "Marketing Manager",
+        name: "Rohit Ladher",
+        title: "Dishwasher",
         image: profile_img_1,
         alt: "Portrait of Donald Jackman",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: '" Excellent service. Quick arrival and diagnosis. Reasonable pricing too. Will recommend highly. "'
     },
     {
-        name: "Richard Nelson",
-        title: "UI/UX Designer",
+        name: "Nazmi Muka",
+        title: "Washing Machine",
         image: profile_img_2,
         alt: "Portrait of Richard Nelson",
-        rating: 4,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        rating: 5,
+        text: '" Rang this local company and was very impressed with the same day service & that they had the spares to repair my machine  which was great . Also they were very reasonably priced - would highly recommend. "'
     },
     {
-        name: "James Washington",
-        title: "Co-Founder",
+        name: "Lawrence Elliott",
+        title: "American Style Fridge-Freezer",
         image: profile_img_3,
         alt: "Portrait of James Washington",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: '" Our American style fridge-freezer suddenly stopped working overnight. Optima Appliances were the only ones who would come on the same day and within an hour. They checked the fridge/freezer, found out what was wrong immediately and offered to find a brand new replacement. I recommend their services. "'
     }
+];
+
+
+export const servicesData = [
+  {
+      name: "Domestic",
+      image: home_red,
+      alt: "Domestic Services",
+      text: 'We offer professional repair and servicing for all your home appliances — whether it’s a faulty oven, washing machine, fridge or other household appliances. Fast, reliable, and affordable repairs.',
+      icon1: engineericon,
+      icon2: speedometer,
+      icon3: pricetag,
+      subheading1: "Hands-on expertise for every appliance.",
+      subheading2: "Prompt service to get you back on track.",
+      subheading3: "Top-notch repairs without breaking the bank.",
+  },
+  {
+      name: "Commercial",
+      image: business,
+      alt: "Commercial Services",
+      text: 'We specialize in the maintenance and repair of commercial appliances. From office kitchen setups to full-scale restaurant equipment, we ensure minimal downtime for your business.',
+      icon1: buildings,
+      icon2: wrench,
+      icon3: engineericon,
+      subheading1: "Supporting your business with seamless solutions.",
+      subheading2: "Tailored services to meet every business demand.",
+      subheading3: "Commercial appliance expertise you can trust.",
+  },
+  {
+      name: "Agency",
+      image: briefcase_circle,
+      alt: "Agency Services",
+      text: 'We work with estate agents and property managers to provide efficient appliance repairs and installations for residential and commercial properties, keeping your tenants satisfied.',
+      icon1: handshake,
+      icon2: house_hand,
+      icon3: toolbox,
+      subheading1: "Dependable partnerships for smooth operations.",
+      subheading2: "Focused expertise for property appliance needs.",
+      subheading3: "Complete care for all your property appliances.",
+  }
 ];
