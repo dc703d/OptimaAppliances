@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {assets} from '../assets/assets'
 import {motion} from "framer-motion"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const navigateAndScroll = (id) => {
-    navigate('/OptimaAppliances');
+    navigate('/OptimaAppliances/');
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
@@ -35,10 +35,10 @@ const Navbar = () => {
       <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
         <img src={assets.logo2} className='w-[200px]'/>
         <ul className='hidden md:flex gap-7 text-white'>
-            <p onClick= {()=> navigateAndScroll('Home')} className='cursor-pointer hover:text-gray-400'>Home</p>
-            <a href='#About' className='cursor-pointer hover:text-gray-400'>About</a>
-            <a href='#Services' className='cursor-pointer hover:text-gray-400'>Services</a>
-            <a href='#FAQ' className='cursor-pointer hover:text-gray-400'>FAQs</a>
+            <Link to='/OptimaAppliances/' onClick= {()=> navigateAndScroll('Home')} className='cursor-pointer hover:text-gray-400'>Home</Link>
+            <p onClick= {()=> navigateAndScroll('About')} className='cursor-pointer hover:text-gray-400'>About</p>
+            <Link to='/OptimaAppliances/Services' className='cursor-pointer hover:text-gray-400'>Services</Link>
+            <a onClick= {()=> navigateAndScroll('FAQ')} className='cursor-pointer hover:text-gray-400'>FAQs</a>
         </ul>
         <motion.button 
         whileHover={{ scale: 1.05 }}
@@ -52,10 +52,22 @@ const Navbar = () => {
             <img onClick={() => setshowMobileMenu(false)} src={assets.cross_icon} className='w-6'/>
         </div>
         <ul className='flex flex-col items-center gap-2 mt-5 mx-5 text-lg font-medium'>
-            <a onClick={() => setshowMobileMenu(false)} href='#Header' className='px-4 py-2 rounded-full inline-block'>Home</a>
-            <a onClick={() => setshowMobileMenu(false)} href='#About' className='px-4 py-2 rounded-full inline-block'>About</a>
-            <a onClick={() => setshowMobileMenu(false)} href='#Services' className='px-4 py-2 rounded-full inline-block'>Services</a>
-            <a onClick={() => setshowMobileMenu(false)} href='#FAQ' className='px-4 py-2 rounded-full inline-block'>FAQs</a>
+            <Link to='/OptimaAppliances/' onClick={() => {
+              setshowMobileMenu(false) 
+              navigateAndScroll('Home')
+            }}
+            className='px-4 py-2 rounded-full inline-block'>Home</Link>
+            <a onClick={() => {
+              setshowMobileMenu(false)
+              navigateAndScroll('About')
+            }} className='px-4 py-2 rounded-full inline-block'>About</a>
+            <Link to='/OptimaAppliances/Services' onClick={() => {
+              setshowMobileMenu(false)
+            }} className='px-4 py-2 rounded-full inline-block'>Services</Link>
+            <a onClick={() => {
+              setshowMobileMenu(false)
+              navigateAndScroll('FAQ')
+            }} className='px-4 py-2 rounded-full inline-block'>FAQs</a>
         </ul>
       </div>
     </div>

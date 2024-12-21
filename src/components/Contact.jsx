@@ -33,10 +33,7 @@ const Contact = () => {
 };
 
   return (
-    <motion.div 
-        initial={{ scale: 0 }} 
-        transition={{duration: 1.5}}
-        animate={{ scale: 1 }}
+    <div 
     className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' id='Contact'>
        <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Contact <span className='underline under underline-offset-4 decoration-1 font-light'>Us</span></h1>      
        <p className='text-center text-gray-500 mb-12 mx-auto max-w-80'>Ready to get your appliances back in action? Contact us today for fast, reliable service tailored to your needs!</p>
@@ -65,7 +62,7 @@ const Contact = () => {
     
     
     
-    </motion.div>
+    </div>
   )
 }
 
