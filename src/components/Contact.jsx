@@ -39,11 +39,11 @@ const Contact = () => {
        <p className='text-center text-gray-500 mb-12 mx-auto max-w-80'>Ready to get your appliances back in action? Contact us today for fast, reliable service tailored to your needs!</p>
         <form onSubmit={onSubmit} className='max-w-2xl mx-auto text-gray-600 pt-8'>
             <div className='flex flex-wrap'>
-                <div className='w-full md:w-1/2 text-left'>
+                <div className='w-full md:w-1/2 text-left mt-4'>
                     Your Name
                     <input className='w-full border border-gray-300 rounded py-3 px-4 mt-2' name='Name' type="text" placeholder='Your Name' required/>
                 </div>
-                <div className='w-full md:w-1/2 text-left md:pl-4'>
+                <div className='w-full md:w-1/2 text-left md:pl-4 mt-4'>
                     Your Email
                     <input className='w-full border border-gray-300 rounded py-3 px-4 mt-2' name='Email' type="email" placeholder='Your Email' required/>
                 </div>

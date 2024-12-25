@@ -31,6 +31,7 @@ const App = () => {
               <ToastContainer/>
               <ServicesPageHeader/>
               <ServicesPageServices/>
+              <Projects/>
               <Contact/>
               <Footer/> 
             </>

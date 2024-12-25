@@ -33,6 +33,8 @@ import briefcase_circle from './briefcase_circle.png'
 import business from './business.png'
 import homepage from './home-page.png'
 import home_red from './home_red.png'
+import engineer_door from './engineer-at-door.png'
+import tradesman from './tradesman.jpg'
 
 
 export const assets = {
@@ -64,6 +66,8 @@ export const assets = {
     handshake,
     buildings,
     toolbox,
+    engineer_door,
+    tradesman
 
 
 }
