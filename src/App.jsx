@@ -15,7 +15,7 @@ const App = () => {
   return (
       <div className='w-full overflow-hidden'>
         <Routes>
-          <Route path='/OptimaAppliances' element={
+          <Route path='/' element={
             <>
               <ToastContainer/>
               <Header/>
@@ -26,7 +26,7 @@ const App = () => {
               <Footer/> 
             </>
           }/>
-          <Route path='/OptimaAppliances/Services' element={
+          <Route path='/Services' element={
             <>
               <ToastContainer/>
               <ServicesPageHeader/>

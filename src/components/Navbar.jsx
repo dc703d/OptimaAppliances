@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const navigateAndScroll = (id) => {
-    navigate('/OptimaAppliances/');
+    navigate('/');
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
@@ -35,9 +35,9 @@ const Navbar = () => {
       <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
         <img src={assets.logo2} className='w-[150px]'/>
         <ul className='hidden md:flex gap-7 text-white'>
-            <Link to='/OptimaAppliances/' onClick= {()=> navigateAndScroll('Home')} className='cursor-pointer hover:text-gray-400'>Home</Link>
+            <Link to='/' onClick= {()=> navigateAndScroll('Home')} className='cursor-pointer hover:text-gray-400'>Home</Link>
             <p onClick= {()=> navigateAndScroll('About')} className='cursor-pointer hover:text-gray-400'>About</p>
-            <Link to='/OptimaAppliances/Services' className='cursor-pointer hover:text-gray-400'>Services</Link>
+            <Link to='/Services' className='cursor-pointer hover:text-gray-400'>Services</Link>
             <a onClick= {()=> navigateAndScroll('FAQ')} className='cursor-pointer hover:text-gray-400'>FAQs</a>
         </ul>
         <motion.button 
@@ -52,7 +52,7 @@ const Navbar = () => {
             <img onClick={() => setshowMobileMenu(false)} src={assets.cross_icon} className='w-6'/>
         </div>
         <ul className='flex flex-col items-center gap-2 mt-5 mx-5 text-lg font-medium'>
-            <Link to='/OptimaAppliances/' onClick={() => {
+            <Link to='/' onClick={() => {
               setshowMobileMenu(false) 
               navigateAndScroll('Home')
             }}
@@ -61,7 +61,7 @@ const Navbar = () => {
               setshowMobileMenu(false)
               navigateAndScroll('About')
             }} className='px-4 py-2 rounded-full inline-block'>About</a>
-            <Link to='/OptimaAppliances/Services' onClick={() => {
+            <Link to='/Services' onClick={() => {
               setshowMobileMenu(false)
             }} className='px-4 py-2 rounded-full inline-block'>Services</Link>
             <a onClick={() => {
