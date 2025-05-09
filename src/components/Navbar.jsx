@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link to='/' onClick= {()=> navigateAndScroll('Home')} className='cursor-pointer hover:text-gray-400'>Home</Link>
             <p onClick= {()=> navigateAndScroll('About')} className='cursor-pointer hover:text-gray-400'>About</p>
             <Link to='/Services' className='cursor-pointer hover:text-gray-400'>Services</Link>
-            <a onClick= {()=> navigateAndScroll('FAQ')} className='cursor-pointer hover:text-gray-400'>FAQs</a>
+            <Link to='/FAQ' className='cursor-pointer hover:text-gray-400'>FAQs</Link>
         </ul>
         <motion.button 
         whileHover={{ scale: 1.05 }}
@@ -64,10 +64,11 @@ const Navbar = () => {
             <Link to='/Services' onClick={() => {
               setshowMobileMenu(false)
             }} className='px-4 py-2 rounded-full inline-block'>Services</Link>
-            <a onClick={() => {
+            <Link to='/FAQ' onClick={() => {
               setshowMobileMenu(false)
               navigateAndScroll('FAQ')
-            }} className='px-4 py-2 rounded-full inline-block'>FAQs</a>
+            }}
+            className='px-4 py-2 rounded-full inline-block'>FAQs</Link>
         </ul>
       </div>
     </div>

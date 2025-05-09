@@ -35,6 +35,7 @@ import homepage from './home-page.png'
 import home_red from './home_red.png'
 import engineer_door from './engineer-at-door.png'
 import tradesman from './tradesman.jpg'
+import star_background from './star_background.jpg'
 
 
 export const assets = {
@@ -67,7 +68,8 @@ export const assets = {
     buildings,
     toolbox,
     engineer_door,
-    tradesman
+    tradesman,
+    star_background
 
 
 }

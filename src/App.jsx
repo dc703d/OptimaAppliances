@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import { Routes, Route } from 'react-router-dom';
 import ServicesPageHeader from './components/ServicesPage/ServicesPageHeader'
 import ServicesPageServices from './components/ServicesPage/ServicesPageServices'
+import FAQ from './components/FAQ'
 
 const App = () => {
   return (
@@ -33,6 +34,13 @@ const App = () => {
               <ServicesPageServices/>
               <Projects/>
               <Contact/>
+              <Footer/> 
+            </>
+          }/>
+          <Route path='/FAQ' element={
+            <>
+              <ToastContainer/>
+              <FAQ/>
               <Footer/> 
             </>
           }/>
